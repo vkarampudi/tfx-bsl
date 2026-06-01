@@ -5,6 +5,13 @@ build --copt=-DTFX_BSL_USE_ARROW_C_ABI
 build --cxxopt=-std=c++17
 build --host_cxxopt=-std=c++17
 
+# Developers on modern Linux toolchains (GCC 13/14/15 & binutils 2.40+)
+# who experience SFrame relocation errors in pybind11 should create a local
+# .bazelrc.user file in the workspace root and add:
+#   build --copt=-Wa,--gsframe=no
+#   build --cxxopt=-Wa,--gsframe=no
+try-import %workspace%/.bazelrc.user
+
 # icu@: In create_linking_context: in call to create_linking_context(),
 # parameter 'user_link_flags' is deprecated and will be removed soon.
 # It may be temporarily re-enabled by setting --incompatible_require_linker_input_cc_api=false
@@ -14,3 +21,4 @@ build:macos_arm64 --cpu=darwin_arm64
 
 # Disable Bzlmod to resolve Protobuf visibility issues
 common --noenable_bzlmod
+common --enable_platform_specific_config
