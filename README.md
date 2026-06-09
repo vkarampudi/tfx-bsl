@@ -1,6 +1,6 @@
 # TFX Basic Shared Libraries
 
-[![Python](https://img.shields.io/badge/python%7C3.9%7C3.10%7C3.11-blue)](https://github.com/tensorflow/tfx-bsl)
+[![Python](https://img.shields.io/badge/python%7C3.10%7C3.11%7C3.12%7C3.13-blue)](https://github.com/tensorflow/tfx-bsl)
 [![PyPI](https://badge.fury.io/py/tfx-bsl.svg)](https://badge.fury.io/py/tfx-bsl)
 
 TFX Basic Shared Libraries (`tfx_bsl`) contains libraries shared by many
@@ -105,7 +105,8 @@ combinations may also work.
 
 tfx-bsl                                                                         | apache-beam[gcp] | pyarrow  | tensorflow        | tensorflow-metadata | tensorflow-serving-api |
 ------------------------------------------------------------------------------- | -----------------| ---------|-------------------|---------------------|------------------------|
-[GitHub master](https://github.com/tensorflow/tfx-bsl/blob/master/RELEASE.md)   | 2.64.0           | 10.0.1   | nightly (2.x)     | 1.17.1              | 2.17.1                 |
+[GitHub master](https://github.com/tensorflow/tfx-bsl/blob/master/RELEASE.md)   | 2.64.0           | 14.0.1   | nightly (2.x)     | 1.21.0              | 2.19.0                 |
+[1.21.0](https://github.com/tensorflow/tfx-bsl/blob/v1.21.0/RELEASE.md)         | 2.64.0           | 14.0.1   | 2.21              | 1.21.0              | 2.19.0                 |
 [1.17.1](https://github.com/tensorflow/tfx-bsl/blob/v1.17.1/RELEASE.md)         | 2.64.0           | 10.0.1   | 2.17              | 1.17.1              | 2.17.1                 |
 [1.17.0](https://github.com/tensorflow/tfx-bsl/blob/v1.17.0/RELEASE.md)         | 2.64.0           | 10.0.1   | 2.17              | 1.17.1              | 2.17.1                 |
 [1.16.1](https://github.com/tensorflow/tfx-bsl/blob/v1.16.1/RELEASE.md)         | 2.59.0           | 10.0.1   | 2.16              | 1.16.1              | 2.16.1                 |
